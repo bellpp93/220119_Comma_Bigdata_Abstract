@@ -1,14 +1,12 @@
 package 폰추상클래스설계;
 
 public abstract class Phone {
-	String owner;
+	static String owner1 = "손흥민";
+	static String owner2 = "이강인";
 	
-	public void turnOn() {
-		System.out.println("폰 전원을 켭니다.");
-	}
-	public void turnOff() {
-		System.out.println("폰 전원을 끕니다.");
-	}
+	public abstract void turnOn();
+	public abstract void turnOff();
+
 	final public void run() {
 		turnOn();
 		turnOff();
